@@ -14,11 +14,11 @@ require_once __DIR__."/movie.php"
 
 <?php
 
-  $new_movie = new Movie();
-  $new_movie->title = "Fantozzi";
-  $new_movie->duration = "1h 40m";
-  $new_movie->genre = "Comico";
-  $new_movie->vote = "8";
+  $new_movie = new Movie("Fantozzi", "1h 40m", "Comico", "8");
+  // $new_movie->title = "Fantozzi";
+  // $new_movie->duration = "1h 40m";
+  // $new_movie->genre = "Comico";
+  // $new_movie->vote = "8";
  
 ?>
 

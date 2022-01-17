@@ -14,11 +14,14 @@ class Movie{
   public $genre;
   public $vote;
 
-  // function __construct($_title, $_duration, $_genre)
-  // {
-  //   $this->title = $_title;
-  //   $this->duration = $_duration;
-  //   $this->genre = $_genre;
-  // }
+  function __construct($_title, $_duration, $_genre, $_vote)
+  {
+    $this->title = $_title;
+    $this->duration = $_duration;
+    $this->genre = $_genre;
+    $this->vote = $_vote;
+  }
+
+
 }
 ?>
