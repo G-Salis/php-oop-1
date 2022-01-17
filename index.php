@@ -14,7 +14,7 @@ require_once __DIR__."/movie.php"
 
 <?php
 
-  $new_movie = new Movie("Fantozzi", "1h 40m", "Comico", "8");
+  $new_movie = new Movie("Fantozzi", "1h 40m", "Horror", "6");
   // $new_movie->title = "Fantozzi";
   // $new_movie->duration = "1h 40m";
   // $new_movie->genre = "Comico";
@@ -25,8 +25,8 @@ require_once __DIR__."/movie.php"
 <ul style="text-align: center; list-style: none;">
   <li>Titolo: <?php echo $new_movie->title?></li>
   <li>Durata: <?php echo $new_movie->duration?></li>
-  <li>Genere: <?php echo $new_movie->genre?></li>
-  <li>Voto: <?php echo $new_movie->vote?></li>
+  <li>Genere: <?php echo $new_movie->genre . "(". $new_movie->getForFamily() . ")" ?></li>
+  <li>Voto: <?php echo $new_movie->getVotation()?></li>
 </ul>
 
 </body>

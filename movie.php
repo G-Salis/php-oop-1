@@ -22,6 +22,21 @@ class Movie{
     $this->vote = $_vote;
   }
 
+  public function getVotation() {
+    $stringVotation = 'Sufficiente';
+    if ($this->vote <= 5) {
+       $stringVotation = 'Insufficiente';
+    } 
+    return $stringVotation;
+ }
 
+ public function getForFamily() {
+  if ($this->genre == "Comico" or $this->genre == "Animazione") {
+     $stringForFamily = 'Family-Freindly';
+  } else{
+    $stringForFamily = 'NO-Family-Freindly';
+  }
+  return $stringForFamily;
+}
 }
 ?>
